@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="hidden" value="diperid" />
+      <label for="yname">Your Name :</label>
+      <input
+        type="text"
+        placeholder="Your Name"
+        id="yname"
+        required
+        minlength="5"
+        maxlength="20"
+      />
+      <br /><br />
+
+      <label for="phone">Mobile Number :</label>
+      <input type="number" placeholder="Mobile Number" id="phone" />
+      <br /><br />
+
+      <label for="website">Web Address :</label>
+      <input type="url" placeholder="Website" id="website" />
+      <br /><br />
+
+      <label for="email">Email Address :</label>
+      <input type="email" placeholder="Email Address" id="email" />
+      <br /><br />
+
+      <label for="pass">Password :</label>
+      <input type="password" placeholder="Your Password" id="pass" />
+      <br /><br />
+
+      <label for="dob">Date Of Birth :</label>
+      <input type="date" id="dob" />
+      <br /><br />
+
+      <label for="tob">Time Of Birth :</label>
+      <input type="time" id="tob" />
+      <br /><br />
+
+      <label for="color">Hair Color :</label>
+      <input type="color" id="color" />
+      <br /><br />
+
+      <label for="">Gender :</label>
+      <input type="radio" name="gndr" value="Male" />Male
+      <input type="radio" name="gndr" value="Female" />Female
+      <input type="radio" name="gndr" value="Others" />Tiktoker <br /><br />
+
+      <label for="">Quata :</label>
+      <input type="checkbox" name="ckbox" />Tribe
+      <input type="checkbox" name="ckbox" />Women
+      <input type="checkbox" name="ckbox" />Disabled
+      <input type="checkbox" name="ckbox" />Freedom Fighter <br /><br />
+
+      <label for="file">Your Picture :</label>
+      <input type="file" id="file" />
+      <br /><br />
+
+      <label for="country">Your Country :</label>
+      <select name="" id="country">
+        <option value="">--Select Country--</option>
+        <option value="BD">Bangladesh</option>
+        <option value="IN">India</option>
+        <option value="PK">Pakistan</option>
+        <option value="US">United State</option>
+        <option value="UK">United Kingdom</option>
+        <option value="Others">Others</option>
+      </select>
+      <br /><br />
+      <input type="datetime-local" />
+      <br /><br />
+
+      <label for="cmt">Your Comment :</label><br />
+      <textarea
+        name=""
+        id="cmt"
+        cols="50"
+        rows="5"
+        placeholder="Your Comment"
+      ></textarea>
+      <br /><br />
+
+      <label for="voice">Voice Range :</label>
+      <input type="range" id="voice" />
+      <br /><br />
+
+      <input type="reset" />
+      <input type="submit" value="Sign up" />
+      <input type="image" src="./chotonam.png" alt="Sign up" height="30" />
+    </form>
+  </body>
+</html>
