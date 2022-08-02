@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div {
+  display: inline-block;
+  width: 100px;
+  line-height: 100px;
+  background-color: lightblue;
+  text-align: center;
+  margin: 0 20px;
+}
+
+b,
+i,
+u {
+  display: block;
+}

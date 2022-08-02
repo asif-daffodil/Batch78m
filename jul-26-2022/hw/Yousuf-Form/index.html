@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+  </head>
+  <body style="background-color: #0078AA;">
+    <h2 style="color: red ; text-align: center;" >This is a Sign Up Form</h2>
+
+    <form action="" method="get" class="login-form" style="margin: 5% 30%;" >
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="fname">First Name:</label>
+        <input
+          type="text"
+          placeholder="First Name"
+          id="fname"
+          required
+          minlength="5"
+          maxlength="20"
+        />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="lname">Last Name:</label>
+        <input
+          type="text"
+          placeholder="Last Name"
+          id="lname"
+          required
+          minlength="5"
+          maxlength="20"
+        />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="email">Your Email:</label>
+        <input type="email" placeholder="email" id="email" required />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="tel">Mobile Number:</label>
+        <input type="tel" placeholder="Mobile Number" id="tel" required />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="url">Website:</label>
+        <input type="url" placeholder="Website" id="url" />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" placeholder="Date of Birth" id="dob" />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="">Gender:</label>
+        <input type="radio" name="gdnr" value="male" />Male
+        <input type="radio" name="gdnr" value="female" />Female
+      </div>
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="">Quata:</label>
+        <input type="checkbox" name="cbox" />Tribe
+        <input type="checkbox" name="cbox" />Fridom Fighter
+        <input type="checkbox" name="cbox" />Disablity
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="country">Country Name:</label>
+        <select name="" id="country">
+          <option value="">--Select Country--</option>
+          <option value="BD">Bangladesh</option>
+          <option value="IN">India</option>
+          <option value="PK">Pakistan</option>
+          <option value="Aus">Australia</option>
+          <option value="USA">USA</option>
+          <option value="UK">UK</option>
+        </select>
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="pass">Password:</label>
+        <input type="password" placeholder="Password" id="pass" />
+      </div>
+
+      <div class="login-form" style="margin: 5% 30%;">
+        <label for="cmt">Your Comment:</label>
+        <textarea
+          name=""
+          id="cmt"
+          placeholder="Lets Say Something"
+          cols="50"
+          rows="5"
+        >
+        </textarea>
+      
+      <div class="login-form" style="margin: 5% 20%;">
+        <input type="reset" />
+        <input type="submit" value="Sign Up" />
+      </div>
+    </form>
+
+
+<form action="" method="post" style="margin: 5% 30%;">
+  <div class="imgcontainer" style="margin: 5% 40%;">
+    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" style="margin: 5% 20%;">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" id="uname" required>
+  </div>
+
+  <div style="margin: 5% 20%;">
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="psw" required>
+  
+  </div>
+    
+  <div style="margin: 5% 20%;">
+    <button type="submit">Login</button><br><br>
+  
+  </div>
+    
+
+  <div style="margin: 5% 20%;">
+    <label for="">
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div> 
+
+  <div style="margin: 5% 20%;">
+    <button type="button" class="cancelbtn">Cancel</button><br><br>
+  </div>
+
+  <div>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  
+  </div>
+</form>
+
+  </body>
+</html>
