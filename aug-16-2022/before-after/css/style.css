@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.bongo {
+  color: red;
+}
+
+.bongo::before {
+  content: "Joy ";
+}
+
+.bongo::after {
+  content: " Bondhu";
+}

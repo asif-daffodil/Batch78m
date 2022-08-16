@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.Gar {
+  width: 100%;
+  height: 100vh;
+  background: green;
+}
+.me {
+  width: 200%;
+  height: 20vh;
+  background: black;
+  padding: 20vh;
+  margin: auto;
+  display: initial;
+}
+.ny {
+  width: 200%;
+  height: 20vh;
+  background: red;
+  padding: 20vh;
+  margin: auto;
+  display: initial;
+}
+.flg {
+  width: 200%;
+  height: 20vh;
+  background: yellow;
+  padding: 20vh;
+  margin: auto;
+  display: initial;
+}

@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/messi-removebg-preview.png");
+  background-color: antiquewhite;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: 600px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.main::before {
+  content: "Brazil will win the fifa worlcup 2022";
+  width: max-content;
+  height: max-content;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: auto auto 10px;
+}
+
+.pain {
+  width: 300px;
+  height: 200px;
+  margin: 0 auto auto;
+  background: rgb(0, 185, 0);
+  display: flex;
+}
+
+.rain {
+  width: 250px;
+  height: 150px;
+  margin: auto;
+  background: orange;
+  clip-path: polygon(0% 50%, 50% 0%, 100% 50%, 50% 100%);
+  display: flex;
+}
+
+.chain {
+  width: 100px;
+  height: 100px;
+  background: darkblue;
+  margin: auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.gain {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+  margin-top: 40px;
+  margin-left: -75px;
+}

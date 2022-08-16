@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section{
+    background-color: aqua;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.content{
+    padding-top: 200px;
+}
+
+
+.black{
+    background-color: black;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    
+}
+
+.red{
+    background-color:red;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    display:block; 
+    
+}
+
+.yellow{
+    background-color:yellow;
+    width: 900px;
+    height: 200px;
+    margin: auto;
+    display:block; 
+}
