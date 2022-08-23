@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div1 {
+  width: 200px;
+  height: 200px;
+  background: cornflowerblue;
+  position: relative;
+  top: 40px;
+  left: 40px;
+  /* right: 0; */
+  /* bottom: ; */
+  z-index: 100;
+}
+
+.div2 {
+  width: 200px;
+  height: 200px;
+  background: limegreen;
+  position: relative;
+  left: 140px;
+  top: -60px;
+  z-index: 500;
+}
+
+.baba {
+  width: 200px;
+  height: 200px;
+  background: url("../images/baba.jpg");
+  position: relative;
+  bottom: 200px;
+  margin: auto;
+}
+
+.konna {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  transition: 0.5s;
+}
+
+.konna:first-child {
+  bottom: -50px;
+  right: -50px;
+  background: url("../images/borsha.jpg");
+  background-size: cover;
+}
+
+.konna:last-child {
+  bottom: -50px;
+  left: -50px;
+  background: url("../images/mim.jpeg");
+  background-size: cover;
+}
+
+.konna:nth-child(2) {
+  top: -50px;
+  left: -50px;
+  background: url("../images/pori.jpeg");
+  background-size: cover;
+}
+
+.konna:nth-child(3) {
+  top: -50px;
+  right: -50px;
+  background: url("../images/purnima.jpeg");
+  background-size: cover;
+}
+
+.baba:hover .konna:first-child {
+  bottom: 150px;
+  right: 150px;
+}
+
+.baba:hover .konna:last-child {
+  bottom: 150px;
+  left: 150px;
+}
+
+.baba:hover .konna:nth-child(2) {
+  top: 150px;
+  left: 150px;
+}
+
+.baba:hover .konna:nth-child(3) {
+  top: 150px;
+  right: 150px;
+}
+
+.baba:hover .konna {
+  transform: rotate(720deg);
+}
+
+.chacha {
+  position: fixed;
+  top: 150px;
+  left: calc(50% - 150px);
+  z-index: -10;
+  width: 300px;
+  height: 300px;
+  background: hotpink;
+}
+
+.kakku {
+  width: 100%;
+  height: 100vh;
+}
+
+.potaka {
+  width: 300px;
+  height: 200px;
+  background: green;
+  display: flex;
+  margin: 40px auto;
+  border: 1px solid #000;
+  position: relative;
+}
+
+.center {
+  width: 150px;
+  height: 150px;
+  background: red;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.potaka:hover {
+  background: #fff;
+}
+
+.potaka::before {
+  content: attr(myData);
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: lightgrey;
+  position: absolute;
+  bottom: -32px;
+  left: -1px;
+  border: 1px solid #000;
+  border-top-width: 0;
+}
+
+.potaka:hover::before {
+  content: "Japan";
+}

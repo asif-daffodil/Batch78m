@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: aquamarine;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.main {
+  width: 750px;
+  height: 400px;
+  background-color: wheat;
+  margin: auto;
+  background-image: url(./download-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: 112% 100%;
+  background-size: 450px 365px;
+}
+.gain {
+  width: 450px;
+  height: 400px;
+  background-color: blue;
+  clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 0% 100%);
+}
+.rain {
+  color: white;
+  padding: 30px;
+  width: 75%;
+}
+.rain h1 {
+  margin-bottom: 20px;
+}

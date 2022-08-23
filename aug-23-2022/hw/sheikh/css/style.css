@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.fb {
+  width: 70%;
+  height: ;
+  background: white;
+  display: flex;
+  margin: 100px;
+  margin-left: 200px;
+  padding: 25px;
+}
+.bckg2 {
+  width: 100%;
+  height: 70%;
+  background: url(./img/5150-removebg-preview.png);
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  margin: auto;
+}
+.type {
+  background-color: blue;
+  width: 650px;
+  height: 460px;
+  clip-path: polygon(0 0, 95% 0, 85% 100%, 0% 100%);
+  display: flex;
+}
+.aboutmessi {
+  width: 350px;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: ;
+  margin-top: 70px;
+  margin-left: 180px;
+}
+.readmore {
+  margin-left: -40px;
+  margin-top: -30px;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}

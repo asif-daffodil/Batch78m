@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+
+}
+.gain{
+    width: 800px;
+    height: 500px;
+    background-image: url(../image/messi.png);
+    background-repeat: no-repeat;
+    background-position: 337px 70%;
+    background-color: #fff;
+    margin: auto;
+}
+.pain{
+    width: 450px;
+    height: 420px;
+    background-color: blue;
+    clip-path:polygon(0% 0%,100% 0%,85% 100%,0% 100%) ;
+    margin: 40px;
+    
+}
+.train{
+    color: white;
+    width: 90%;
+    padding: 35px;
+}
+.train h1{
+    padding-bottom: 20px;
+
+}
+img{
+    width: 290px;
+    padding-top: 20px;
+}

@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.messi {
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/Messi.png");
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: 450px 450px;
+  background-position: 90% 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.psd {
+  width: 750px;
+  height: 450px;
+  background: rgb(0, 55, 252);
+  margin: auto;
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  display: flex;
+}
+.text {
+  width: 675px;
+  height: 400px;
+}
+
+.head {
+  color: white;
+  font-size: 50px;
+  padding: 5% 5%;
+}
+
+.pera {
+  color: white;
+  font-size: 20px;
+  padding: 5% 5%;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: #48ba48;
+  background-image: -webkit-linear-gradient(top, #48ba48, #1b95e0);
+  background-image: -moz-linear-gradient(top, #48ba48, #1b95e0);
+  background-image: -ms-linear-gradient(top, #48ba48, #1b95e0);
+  background-image: -o-linear-gradient(top, #48ba48, #1b95e0);
+  background-image: linear-gradient(to bottom, #48ba48, #1b95e0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  margin: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

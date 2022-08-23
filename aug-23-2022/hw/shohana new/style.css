@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.main{
+    width: 650px;
+    height: 400px;
+    background-color:white;
+    margin: auto;
+    background-image: url(./images-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-position: 113% 100%;
+    background-size: 396px 348px;
+
+}
+.gain{
+    width: 450px;
+    height: 350px;
+
+    background-color: blue;
+    clip-path: polygon(0% 0%,100% 0%,80% 100%, 0% 100%);
+    margin: 25px;
+    
+}
+.pain{
+    color: white;
+    padding: 30px;
+}
+.pain h1{
+    margin-bottom: 20px;
+}
+
+
+
