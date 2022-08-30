@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: url(/image/woodBG.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.scenery:hover .window1 {
+    left: -250px;
+}
+.scenery:hover .window2 {
+    left: 500px;
+}
+.scenery {
+    width: 500px;
+    height: 270px;
+    background: rgb(3, 2, 71);
+    position: relative;
+    left: 700px;
+    top: 250px;
+    z-index: 200;
+    background-image: url(/image/waterfall.gif);
+}
+.window1 {
+    width: 250px;
+    height: 270px;
+    background: rgba(151, 214, 243, 0.432);
+    background-image: url(/image/window.png);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 300;
+    transition: 0.5s ;
+}
+.window2 {
+    width: 250px;
+    height: 270px;
+    background: rgba(151, 214, 243, 0.432);
+    background-image: url(/image/window.png);
+    position: absolute;
+    left: 250px;
+    z-index: 300;
+    transition: 0.5s;
+}

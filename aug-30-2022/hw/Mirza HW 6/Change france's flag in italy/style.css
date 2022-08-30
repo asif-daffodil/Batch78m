@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+.france{
+    width: 900px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin: 200px auto;
+    position: relative;
+
+}
+
+.blue{
+    width: 300px;
+    height: 500px;
+    background-color: #002551; 
+}
+.red{
+    width: 300px;
+    height: 500px;
+    text-align: right;
+    background-color: #C81025;
+    position: absolute;
+    left: 600px;
+}
+
+.france::before{
+    content: "France";
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: aqua;
+    bottom: -50px;
+    left: 0;
+    position: absolute;
+}
+
+.france:hover .blue{
+    background-color: #008D44;
+}
+
+.france:hover .red{
+    background-color: #C82A35;
+}
+
+.france:hover::before{
+    content: "Italy";
+}

@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 850px;
+  height: 700px;
+  background: lightseagreen;
+  display: flex;
+  position: relative;
+}
+
+.blue {
+  width: 200px;
+  height: 550px;
+  background: #002654;
+  margin: 75px 125px;
+  position: absolute;
+}
+
+.white {
+  width: 200px;
+  height: 550px;
+  background: white;
+  margin: 75px 325px;
+  position: absolute;
+}
+
+.red {
+  width: 200px;
+  height: 550px;
+  background: rgb(255, 0, 0);
+  margin: 75px 525px;
+  position: absolute;
+}
+
+.main:hover .blue {
+  background: green;
+}
+
+.main::before {
+  content: attr(data);
+  width: 100%;
+  height: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  background: black;
+  color: white;
+  text-align: center;
+}
+
+.main:hover::before {
+  content: "Italy";
+}

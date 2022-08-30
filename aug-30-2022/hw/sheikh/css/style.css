@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.main {
+  width: 100%;
+  height: 100vh;
+  background: red;
+  display: flex;
+  position: relative;
+}
+.water {
+  width: 400px;
+  height: 250px;
+  background: url(../images/pexels-jaime-reimer-2662116.jpg);
+  background-size: cover;
+  position: absolute;
+  left: 42%;
+  top: 25%;
+}
+.window1 {
+  width: 200px;
+  height: 250px;
+  background: url(../images/wooden-windows-500x500.jpg);
+  background-size: cover;
+  position: absolute;
+  transition: 5;
+}
+.window2 {
+  width: 200px;
+  height: 250px;
+  background: url(../images/wooden-windows-500x500.jpg);
+  background-size: cover;
+  position: absolute;
+  right: 0px;
+  transition: 5;
+}
+.water:hover .window1 {
+  position: absolute;
+  left: -200px;
+}
+.water:hover .window2 {
+  position: absolute;
+  right: -200px;
+}

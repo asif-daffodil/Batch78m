@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.france {
+    width: 100px;
+    height: 300px;
+    background: navy;
+    position: relative;
+    left: 20px;
+    margin-top: 20px;
+    margin: auto;
+
+}
+
+.f2 {
+    width: 90px;
+    height: 300px;
+    background: whitesmoke;
+    position: relative;
+    left: 80px;
+    top: 0;
+    margin: auto;
+
+}
+
+.f3{
+    width: 90px;
+    height: 300px;
+    background: red;
+    position: relative;
+    left: 80px;
+    top: 0;
+    margin: auto;
+
+
+}
+
+.france:hover{
+    background: green;
+
+}
+
+.france::before {
+    content:"France" ;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: gray;
+    position: absolute;
+    bottom: -22px;
+    left: -1px;
+    border: 1px solid black;
+    border-top-width: 0;
+    
+}
+
+.france:hover::before{
+    content: "Italy";
+}
