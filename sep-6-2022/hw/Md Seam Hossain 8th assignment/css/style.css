@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@600;700&family=Merriweather:ital,wght@1,700&family=Open+Sans:ital,wght@0,600;1,600;1,800&family=Oswald:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pain {
+  font-size: 35px;
+  font-family: "Merriweather", serif;
+}
+.sain {
+  font-family: "Antonio", sans-serif;
+  font-family: "Merriweather", serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}

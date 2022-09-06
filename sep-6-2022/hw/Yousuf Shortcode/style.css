@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(130, 11, 11);
+}
+
+table {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  margin: 15%;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 7%;
+}

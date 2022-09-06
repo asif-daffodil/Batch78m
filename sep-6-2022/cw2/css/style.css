@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.ami {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  padding: 10px;
+  grid-gap: 10px;
+  grid-template-areas: "ar1 ar1 ar2 ar9" "ar4 ar5 ar2 ar9" "ar7 ar8 ar2 ar9" "ar3 ar6 ar2 ar9";
+}
+
+.tumi {
+  background-color: dodgerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: #fff;
+}
+
+.ami > .tumi:first-child {
+  grid-area: ar1;
+}
+.ami > .tumi:nth-child(2) {
+  grid-area: ar2;
+}
+.ami > .tumi:nth-child(3) {
+  grid-area: ar3;
+}
+.ami > .tumi:nth-child(4) {
+  grid-area: ar4;
+}
+.ami > .tumi:nth-child(5) {
+  grid-area: ar5;
+}
+.ami > .tumi:nth-child(6) {
+  grid-area: ar6;
+}
+.ami > .tumi:nth-child(7) {
+  grid-area: ar7;
+}
+.ami > .tumi:nth-child(8) {
+  grid-area: ar8;
+}
+.ami > .tumi:last-child {
+  grid-area: ar9;
+}

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url("../images/cursor.png"), auto;
+}
+
+@font-face {
+  font-family: poran;
+  src: url("../fonts/Inconsolata-VariableFont.ttf");
+}
+
+.bd {
+  width: 1200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 8px; */
+  /* padding: 8px; */
+  box-shadow: 0 0 10px #000, 0 0 40px #0f0 inset;
+  z-index: 10;
+  border-radius: 20px;
+}
+
+.bd > div:first-child,
+.bd > div:last-child {
+  background: linear-gradient(to top right, #00f, #fff, #00f);
+  z-index: -10;
+}
+.bd > div:nth-child(2),
+.bd > div:nth-child(3) {
+  background: linear-gradient(to top left, #00f, #fff, #00f);
+  z-index: -10;
+}

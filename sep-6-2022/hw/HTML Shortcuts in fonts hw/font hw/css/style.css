@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100&family=Caveat:wght@400;500&family=Qwitcher+Grypen:wght@700&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100&family=Caveat:wght@400;500&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@100&family=Caveat:wght@400;500&family=Indie+Flower&family=Pacifico&family=Qwitcher+Grypen:wght@700&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.div1{
+
+    
+    font-style: italic;
+    background: skyblue;
+    transition: 1s;
+   
+   
+    
+    
+}
+
+.div2{
+    font-family:'roboto condensed';
+    font-size: 20px;
+    background: pink;
+    transition: 1s;
+    
+
+}
+
+.div3{
+  font-family: 'Qwitcher Grypen', cursive;
+   font-size: 30px;
+   background: lightseagreen;
+   transition: 1s;
+
+}
+
+
+.div4{
+    font-family: 'Pacifico', cursive;
+    background: lavender;
+    transition: 1s;
+    
+}
+ .div5{
+    font-family: 'Indie Flower', cursive;
+    background: lightgreen;
+    transition: 1s;
+    
+
+ }
+
+.div3:hover{
+    background: lightgrey;
+
+}
+
+.div4:hover{
+    background: rgb(124, 38, 101);
+
+}
+.div5:hover{
+    background: lightcyan;
+
+}
+
+.div2:hover{
+    background: coral;
+
+}
+.div1:hover{
+    background: lightgoldenrodyellow;
+
+}

@@ -1,0 +1,94 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Merriweather:ital,wght@1,900&family=Nunito:ital,wght@1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+  
+    width: 100%;
+    /* height: 100vh; */
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    display: grid;
+    grid-template-areas:
+        'h'
+        'art'
+    ;
+}
+
+#head{
+    padding: 5px;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(4, 0, 255);
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    
+
+   
+  
+}
+
+article{
+    width: 100%;
+    background-color: rgb(4, 0, 255);
+    display: grid;
+    grid-template-areas: 
+    's1 a1'
+    's2 a2'
+    's3 a3'
+    's4 a4'
+    's5 a5'
+    's6 a6'
+    's7 a7'
+    's8 a8'
+    's9 a9'
+    's10 a10';
+  
+}
+
+section{
+    padding: 5px;
+    width: 100%;
+    border: 3px solid whitesmoke;
+    box-shadow: -1px -4px 5px rgb(11, 12, 94);
+    color: white;
+}
+
+aside{
+    padding: 5px;
+    width: 100%;
+    border: 3px solid whitesmoke;
+    box-shadow: -1px -4px 5px rgb(11, 12, 94);
+    color: white;
+}
+
+#head{grid-area: h;}
+article{grid-area: art;}
+
+#sec1{grid-area: s1;}
+#sec2{grid-area: s2;}
+#sec3{grid-area: s3;}
+#sec4{grid-area: s4;}
+#sec5{grid-area: s5;}
+#sec6{grid-area: s6;}
+#sec7{grid-area: s7;}
+#sec8{grid-area: s8;}
+#sec9{grid-area: s9;}
+#sec10{grid-area: s10;}
+
+#as1{grid-area: a1;}
+#as2{grid-area: a2;}
+#as3{grid-area: a3;}
+#as4{grid-area: a4;}
+#as5{grid-area: a5;}
+#as6{grid-area: a6;}
+#as7{grid-area: a7;}
+#as8{grid-area: a8;}
+#as9{grid-area: a9;}
+#as10{grid-area: a10;}
