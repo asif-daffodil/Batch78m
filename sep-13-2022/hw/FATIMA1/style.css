@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500;600;700&family=Inspiration&family=Oleo+Script+Swash+Caps:wght@700&family=Pacifico&family=Rubik+Dirt&family=Rubik+Marker+Hatch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@500;600;700&family=Inspiration&family=Oleo+Script+Swash+Caps:wght@700&family=Rubik+Dirt&family=Rubik+Marker+Hatch&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background: black;
+}
+table ,tr , th ,td {
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    padding: 15px;
+    border-radius: 30px;
+    
+    
+}
+.main{
+    margin: auto;
+    margin-top: 20px;
+   
+}
+thead{
+    font-size: 30px;
+    font-family: 'Anton', sans-serif;
+  background: tomato;
+    
+
+}
+.pain tbody tr:nth-child(even){
+    background-color: tomato;
+}
+.pain tbody tr:nth-child(odd){
+    background-color: gray;
+    color: white;
+}
+tr:hover td{
+    color: yellow;
+    font-family: 'Dancing Script', cursive;
+     
+}
+

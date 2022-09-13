@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.full {
+  width: 100%;
+  height: 100vh;
+  background: skyblue;
+  display: flex;
+  cursor: url(../images/cursor-png-1142.png) default;
+}
+.main {
+  width: 900px;
+  height: ;
+  background-color: white;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px;
+}
+.main > .ami:first-child {
+  background: url(../images/1356.jpg);
+  background-size: cover;
+}
+.main > .ami:last-child {
+  background: white;
+}
+.readmore {
+  margin: -25px;
+}
+p {
+  text-align: justify;
+  padding: 10px;
+}
+h1 {
+  padding: 15px;
+}

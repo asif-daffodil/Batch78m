@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    
+   display: grid;
+   width: 100%;
+   height: 100vh;
+   /* background-color: darkgreen; */
+    grid-template-areas: 
+        'one one one two two two'
+    ;
+    margin: 10px 10px 10px 10px;
+   
+}
+
+
+
+.div1{
+    height: 450px;
+    width: 100%;
+   width: 100%;
+   background-color: darkgoldenrod;
+
+}
+
+.div1 img{
+    height: 450px;
+}
+
+.div2{
+     height: 450px;
+    width: 100%;
+    text-align: center;
+    color: white;
+     background-color: darkgoldenrod;
+     border-left: 2px solid white;
+    
+} 
+.div2 h1{
+    color: white;
+
+}
+
+.div2 p{
+    text-align: justify;
+    margin: 5px;
+}
+
+.div1{grid-area: one;}
+.div2{grid-area: two;}

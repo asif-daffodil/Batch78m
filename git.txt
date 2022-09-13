@@ -1,0 +1,23 @@
+
+
+
+github - rep
+pc - project - connect - rep
+
+One time:
+git init
+
+git add .
+git commit -m "jekono kisu"
+
+One time:
+git remote add origin https://github.com/asif-daffodil/Yummy.git
+
+
+git init
+git add .
+git commit -m "apnar commit"
+git remote add origin https://github.com/asif-daffodil/Yummy.git
+git push
+git push --set-upstream origin master
+

@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5 {
+  width: 150px;
+  height: 150px;
+  background: dodgerblue;
+  display: inline-block;
+  margin: 10px;
+  box-shadow: 20px 20px 20px #ccc;
+}
+
+.div1 {
+  transform: translateX(300px) translateY(300px) scale(120%) skewX(20deg)
+    skewY(20deg) rotate(45deg);
+}
+
+.div2 {
+  transform: scale(80%);
+  position: relative;
+}
+
+.div3 {
+  transform: scale(50%) skew(45deg);
+}
+
+.div4 {
+  transform: rotate(45deg) scale(50%);
+}
+
+.div5 {
+  transform: matrix(0.5, 0, 0, 0.5, 100, 50);
+}
+
+.div2::before {
+  content: "25";
+  width: 70px;
+  background: red;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 26px;
+  border-radius: 20px;
+  transform: translateY(-50%);
+}
