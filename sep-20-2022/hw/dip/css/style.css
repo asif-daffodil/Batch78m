@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main{
+width: 100%;
+height: 100vh;
+display: flex;
+}
+
+.pain{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    position: relative;
+
+}
+
+.pain::before {
+    content:"" ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../image/ab59d8e29c6ae2b3800b4d999a2ee3fa_666X290_1.jpg) no-repeat center    ;
+    backface-visibility: hidden;
+    transition: 0.5s;
+    animation: bge 3s infinite linear;
+}
+
+@keyframes bge {
+    0%{
+        transform: rotateY(0deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: rotateY(0deg);
+    }
+}
+
+.pain::after{
+    content:"" ;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../image/c745c53aec22813235d04cec42c11b0e.jpg) no-repeat center    ;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 0.5s;
+    animation: bike 3s infinite linear;
+}
+
+/* .pain:hover::before{
+    transform: rotateY(180deg)
+}
+
+.pain:hover::after{
+    transform: rotateY(0deg)
+} */
+
+
+@keyframes bike {
+    0%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+    }
+}
+
+.class1{
+    display: grid;
+     grid-template-columns: repeat(4, 1fr );
+     grid-gap: 20px;
+     padding: 20px;
+     background: #000;
+
+}
+ .class1 > div{
+    background: #fff;
+    border-radius: 6px;
+    padding: 12px;
+ }

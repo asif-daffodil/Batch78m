@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$borderColor: lightpink;
+
+@mixin commonPro($w, $h, $d: flex) {
+  width: $w;
+  height: $h;
+  border: 1px solid $borderColor;
+  display: $d;
+  margin: auto;
+}
+
+.dada {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  > .baba {
+    @include commonPro(400px, 400px);
+    > .ami {
+      @include commonPro(300px, 300px);
+      > .chield {
+        @include commonPro(200px, 200px, block);
+        position: relative;
+        &::before {
+          content: "";
+          width: 60px;
+          height: 60px;
+          background: hotpink;
+          position: absolute;
+          top: -30px;
+          left: -30px;
+          transition: 0.5s;
+        }
+        &:hover {
+          background: dodgerblue;
+          &::before {
+            top: 170px;
+            left: 170px;
+          }
+        }
+      }
+    }
+  }
+}
