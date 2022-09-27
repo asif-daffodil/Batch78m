@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(../image/cursor.png) auto;
+}
+
+.main {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+
+  grid-template-areas: "one one one two two two";
+  margin: 10px 10px 10px 10px;
+}
+.pain {
+  height: 450px;
+  width: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+.pain img {
+  height: 450px;
+}
+.tain {
+  height: 450px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: aqua;
+  border-left: 2px solid white;
+}
+.tain h1 {
+  color: white;
+}
+
+.tain p {
+  text-align: justify;
+  margin: 5px;
+}
+
+.pain {
+  grid-area: one;
+}
+.tain {
+  grid-area: two;
+}

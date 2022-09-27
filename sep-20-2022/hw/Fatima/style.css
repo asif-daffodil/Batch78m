@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main{
+   
+    display: grid;
+    background-image: url(./lotus-1205631_1920.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px;
+    
+}
+.main > div{
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+    padding: 20px;
+    box-shadow: 2px 2px 10px black;
+    background-color:#8a2be278;
+
+   
+}
+@media only screen and (max-width:620px){
+    .main{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 8px;
+      
+        
+    }
+    
+}
+
+
+@media only screen and (min-width:620px) and (max-width:1020px){
+    .main{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 16px;
+        
+    }
+    
+}
+
+@media only screen and (min-width:1020px){
+    .main{
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+        
+    }
+}
+
+
+
+  .pain {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(#8a2be278,white,#8a2be278);
+    
+    
+    animation: pain 1s infinite linear;
+  }
+  @keyframes pain {
+    0% {
+      background: radial-gradient(#8a2be278,white,#8a2be278);
+    }
+    50% {
+      background: radial-gradient(white,#8a2be278,white);
+    }
+    100% {
+      background: radial-gradient(#8a2be278,white,#8a2be278);
+    }
+    
+  }
+ 
+  
+  
+  
+  
+  .rain {
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    position: relative;
+    animation: rain 1s infinite linear;
+     
+  }
+  @keyframes rain {
+    0% {
+      width: 450px;
+      height: 450px;
+  }
+    50% {
+      width: 150px;
+      height: 150px;
+  }
+    100% {
+      width: 450px;
+      height: 450px;
+  }
+    
+  }
+  
+  
+  .rain::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./robert-downey-jr-instagram.jpg) no-repeat center / cover;
+    backface-visibility: hidden;
+    transition: 1s;
+    animation: before 2s infinite linear;
+    
+
+  }
+  @keyframes before {
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(0deg);}
+    
+  }
+ 
+  .rain::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(./the-avengers.jpg) no-repeat center / cover;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    transition: 0.5s;
+    animation: after 2s infinite linear;
+
+  }
+  @keyframes after {
+    0% {transform: rotateY(180deg);}
+    50% {transform: rotateY(0deg);}
+    100% {transform: rotateY(180deg);}
+    
+  }
+  
+
+  
+  
+  
+  
+  
+  
+   

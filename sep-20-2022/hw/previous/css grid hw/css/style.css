@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor:url(../css/cursor-removebg-preview.png), auto;
+   
+}
+
+
+.bg{
+     width: 900px;
+    height: 70vh;
+    display: grid;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: inset;
+    background-color:black;
+    /* display: flex; */
+    /* grid-template-columns: ar1 ; */
+    
+
+}
+
+.queen{
+   width: 450px;
+   height: 430px;
+   display: flex;
+background-image: url("../css/queen-removebg-preview.png"); 
+background-repeat: no-repeat;
+background-size: center 30px;
+background-color: black;
+border-radius: 20px;
+    
+}
+
+.queen1{
+    text-align: center;
+    /* background-color: pink; */
+    color: aliceblue;
+    margin-top: -410px;
+    font-size: 20px;
+    font-style: italic;
+   
+
+
+}
+
+.bg > div:first :first-child{
+    grid-area: ar1;
+    
+}
+
+.bg > .queen1:last-child{
+    grid-area: ar2 ;
+
+}
