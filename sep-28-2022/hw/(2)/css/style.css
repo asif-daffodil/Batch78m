@@ -1,0 +1,70 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../cube-background-full-hd-1080p-71530.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.logo {
+  width: 120px;
+  cursor: pointer;
+}
+
+.nev {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+.nev > .dev {
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+.nev > .dev > li {
+  width: 60px;
+  border: 1px solid rgb(252, 250, 250);
+  margin: 0 4px;
+  border-radius: 50%;
+  position: relative;
+}
+.nev > .dev > li > a {
+  line-height: 60px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+.nev > .dev > li:hover {
+  background: white;
+}
+.nev > .dev > li:hover > a {
+  color: black;
+}
+
+.pom {
+  width: 650px;
+  margin: 20px 0 20px auto;
+  list-style: none;
+  display: flex;
+  background: black;
+  text-align: center;
+}
+.pom > li {
+  width: 100%;
+}
+.pom > li > a {
+  text-decoration: none;
+  line-height: 50px;
+  color: white;
+  display: block;
+}
+.pom > li:hover {
+  background: blue;
+}/*# sourceMappingURL=style.css.map */
