@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+
+.div1{
+    width: 100%;
+    height: 300px;
+    background-position: center ;
+    background: url(../banner.jpg);
+    background-repeat: no-repeat;
+    margin-left: 450px;
+    background-size: contain;
+    display: flex;
+
+ 
+
+}
+
+   
+    
+.h2{
+    width: 100%;
+    text-align: center;
+
+}
+
+.div2{
+     width: 350px;
+    height: 300px;
+    // background-position: center ;
+    background: url(../product1.jpg);
+    background-repeat: no-repeat;
+    margin-left: 100px;
+    background-size: contain;
+    position: relative;
+   
+   
+  
+  
+    
+}
+
+.div3{
+     width: 350px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background: url(../product\ 2.jpg);
+    margin-left: 800px;
+    margin-top: -300px;
+      position: relative;
+ 
+     
+    
+ 
+}
+
+
+.div4{
+    width: 300px;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background:  rgb(197, 18, 18);
+    margin-left: 100px;
+    text-align: center;
+    color: white;
+    
+}
+
+.div5{
+    width: 343px;
+    height: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background:  rgb(197, 18, 18);
+    margin-left: 807px;
+    text-align: center;
+    margin-top: -80px;
+    color: white;
+    
+}
+
+  .h{
+    color: rgb(121, 21, 21);
+    text-align: center;
+    font-style: oblique;
+    padding: 20px;
+    
+  }   
+  
+  figure{
+    img{
+        width: 110px;
+        margin-left: 430px;
+        margin-top: -80px;
+      
+    }
+  }
+
+
+
+
+
+.main{
+    width: 500px;
+   height: 100px;
+   background: rgb(202, 11, 11);
+   margin: auto;
+   padding: -20px;
+
+ >.snav{
+     margin: auto;
+        list-style: none;
+        display: flex;
+        margin-left: 50px;
+        margin-top: 80px;
+        //  padding: 20px;
+        
+        >li{
+              width: 120px;
+              height: 45px;
+            border: 2px solid rgb(72, 5, 5);
+            margin: 0 40px;
+            border-radius: 50%;
+            background: white;
+           
+        
+            
+             
+    >a{
+         line-height: 40px;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: rgb(18, 2, 2);
+                font-size: 20px;
+                z-index: 10px;   
+    }
+        }
+
+ }
+
+}
+
+.pain{
+    margin-left:500px ;
+}

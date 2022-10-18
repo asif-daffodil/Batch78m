@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin commonBtn {
+  color: #fff;
+  font-size: 9px;
+  font-weight: normal;
+  background: #171717;
+  width: 116px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 20%/50%;
+}
+
+header {
+  > .mainMenu {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    border-bottom: 5px solid #f3ebdb;
+    > figure {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    > nav {
+      > ul {
+        list-style: none;
+        display: flex;
+        > li {
+          > a {
+            text-decoration: none;
+            display: block;
+            line-height: 100px;
+          }
+        }
+      }
+    }
+    > .mainNav {
+      > ul {
+        > li {
+          > a {
+            color: #171717;
+            padding: 0 50px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    > .sideNav {
+      > ul {
+        > li {
+          > a {
+            color: #000;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  > .banner {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 64px auto;
+    min-height: 100vh;
+    > .leftSocialNav {
+      background: #ededed;
+      > nav {
+        > ul {
+          list-style: none;
+          > li {
+            > a {
+              text-decoration: none;
+              color: #171717;
+              font-size: 10px;
+              text-align: center;
+              display: block;
+              line-height: 64px;
+            }
+            &:last-child {
+              width: max-content;
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+    > .mainBanner {
+      background: url("../images/bannerbg.jpg");
+      background-size: cover;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      > .sokhina {
+        width: 50%;
+        > h2 {
+          font-size: 90px;
+          line-height: 80px;
+          font-weight: 500;
+        }
+        > p {
+          font-size: 14px;
+          color: #171717;
+          margin: 36px 0;
+        }
+        > nav {
+          margin-bottom: 36px;
+          > ul {
+            list-style: none;
+            display: flex;
+            text-align: center;
+            > li {
+              border: 1px solid #000;
+              border-radius: 50%;
+              margin: 0 16px;
+              width: 36px;
+              > a {
+                display: block;
+                text-decoration: none;
+                color: #000;
+                line-height: 36px;
+              }
+              &:hover {
+                background: #000;
+                > a {
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+        > article {
+          color: #535353;
+          font-size: 14px;
+          margin-bottom: 36px;
+        }
+        > button {
+          @include commonBtn();
+        }
+      }
+    }
+  }
+}
+
+main {
+  section {
+    width: 1172px;
+    margin: auto;
+  }
+  > .isotope {
+    > nav {
+      padding-top: 80px;
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        li {
+          a {
+            text-decoration: none;
+            display: block;
+            color: #2d2b27;
+            padding: 0 24px;
+            line-height: 0;
+          }
+        }
+      }
+    }
+    > .images {
+      display: grid;
+      // grid-template-areas: "area1 area3 area4" "area2 area3 area5";
+      grid-template-columns: auto auto auto;
+      grid-gap: 22px;
+      margin-top: 52px;
+      > div {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 22px;
+      }
+      > figure {
+        /* &:nth-child(1) {
+          grid-area: area1;
+        }
+        &:nth-child(2) {
+          grid-area: area2;
+        }
+        &:nth-child(3) {
+          grid-area: area3;
+        }
+        &:nth-child(4) {
+          grid-area: area4;
+        }
+        &:nth-child(5) {
+          grid-area: area5;
+        } */
+      }
+      > div {
+        > .likhaAse1 {
+          position: relative;
+          > img {
+            position: relative;
+          }
+          > div {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 26px;
+            font-weight: bold;
+            color: rgb(45, 43, 39);
+            line-height: 1.2;
+          }
+          &:nth-child(2) {
+            > div {
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .new {
+        position: relative;
+        &::before {
+          content: "New";
+          text-transform: uppercase;
+          color: rgb(248, 248, 248);
+          font-size: 11px;
+          background-color: rgb(26, 26, 26);
+          width: 48px;
+          height: 30px;
+          position: absolute;
+          top: 14px;
+          right: 14px;
+          z-index: 10;
+          clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 20% 80%, 0% 100%);
+          text-align: center;
+          line-height: 24px;
+        }
+      }
+      .likaAse2,
+      .likaAse3 {
+        position: relative;
+        > img {
+          position: relative;
+        }
+        > div {
+          position: absolute;
+          top: 125px;
+          left: 40px;
+          > h3 {
+            color: #292929;
+            font-size: 13px;
+            font-weight: normal;
+          }
+          > h2 {
+            margin: 36px 0;
+            font-size: 19px;
+            font-weight: normal;
+            color: #2d2b27;
+          }
+          > button {
+            @include commonBtn();
+          }
+        }
+      }
+      .likaAse3 {
+        > div {
+          position: absolute;
+          top: 40px;
+          left: 40px;
+        }
+      }
+    }
+    > .banner2 {
+      position: relative;
+      margin-top: 24px;
+      > img {
+        position: relative;
+      }
+      > div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        > h2 {
+          font-size: 26px;
+          color: rgb(45, 43, 39);
+          font-weight: bold;
+          line-height: 0.769;
+          letter-spacing: 1.6px;
+        }
+        > h3 {
+          font-size: 14px;
+          color: rgb(26, 26, 26);
+          line-height: 1.429;
+          margin: 20px 0;
+          letter-spacing: 6.4px;
+        }
+        > button {
+          background-color: rgb(255, 255, 255);
+          width: 244px;
+          height: 59px;
+          border-width: 0;
+          border-radius: 15%/50%;
+          font-size: 12px;
+          color: rgb(43, 43, 43);
+        }
+      }
+    }
+  }
+}

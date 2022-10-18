@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  width: 100%;
+  background: lightgray;
+  display: flex;
+  padding: 0 60px;
+  position: relative;
+  > img {
+    width: 100px;
+  }
+  > ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+    > li {
+      width: 100%;
+      > a {
+        text-decoration: none;
+        display: block;
+        line-height: 50px;
+        padding: 20px;
+      }
+      > div {
+        width: 100vw;
+        height: 200px;
+        background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+          url("../images/menubg.png") no-repeat;
+        background-size: contain;
+        background-position: 100% 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        display: none;
+      }
+      &:hover {
+        > div {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 500px;
+  background: url("../images/maxresdefault.jpg");
+  background-size: cover;
+}

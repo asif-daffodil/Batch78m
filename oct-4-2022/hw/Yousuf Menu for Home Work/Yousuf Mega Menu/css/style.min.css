@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+nav {
+  width: 750px;
+  margin: 20px auto;
+}
+nav > ul {
+  list-style: none;
+  background: #000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+nav > ul > li {
+  width: 100%;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  line-height: 50px;
+  font-size: 20px;
+}
+nav > ul > li:hover {
+  background: red;
+}
+nav > ul > li:hover > div {
+  display: grid;
+}
+nav > ul > li > div {
+  width: 750px;
+  display: none;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #000;
+  padding: 10px 0;
+}
+nav > ul > li > div > ul {
+  list-style: none;
+}
+nav > ul > li > div > ul > li > a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding-left: 10px;
+}
+nav > ul > li > div > ul > li:first-child {
+  font-weight: bold;
+  padding: 5px 0;
+}
+nav
+  > ul
+  > li
+  > div
+  > ul
+  > li:hover:not(nav > ul > li > div > ul > li:hover:first-child)
+  > a {
+  text-decoration: underline;
+}
+nav > ul > li > div > ul > li:not(nav > ul > li > div > ul > li:first-child) {
+  padding-left: 10px;
+}
+nav
+  > ul
+  > li
+  > div
+  > ul
+  > li:not(nav > ul > li > div > ul > li:first-child)
+  > a::before {
+  content: "->";
+}
+img {
+  width: 80px;
+  height: 60px;
+  padding: 5px 0 0;
+} /*# sourceMappingURL=style.min.css.map */
