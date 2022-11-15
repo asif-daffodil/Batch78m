@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:nth-child(2) {
+    flex-direction: column;
+    > figure {
+      > #img2 {
+        width: 600px;
+        height: 300px;
+        object-fit: cover;
+      }
+    }
+    > div {
+      margin-top: 20px;
+    }
+  }
+}
