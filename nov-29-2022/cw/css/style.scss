@@ -1,0 +1,49 @@
+body {
+  background: url("../images/rain.gif");
+  background-size: cover;
+}
+.main {
+  background: url("../images/messi.png") no-repeat bottom right;
+  > div {
+    background: linear-gradient(rgba(255, 255, 255, 0.5)),
+      url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.brazilText {
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 10px;
+  background: url("../images/brazil.jpg");
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+  line-height: 48px;
+  margin: 0;
+}
+
+.pakistan {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  background: url("../images/brazil.jpg");
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+.uzbegistan {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  background: url("../images/brazil.jpg");
+  background-size: 100% 100%;
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
