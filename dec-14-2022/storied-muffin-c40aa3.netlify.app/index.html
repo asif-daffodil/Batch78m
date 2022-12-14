@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./WOW-master/css/libs/animate.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark anc">
+      <div class="container">
+        <a class="navbar-brand" href="#">Cacucola</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#login"
+                >My Accounts</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <form class="">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control border-success"
+                placeholder="Username"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+              <span
+                class="input-group-text border-success text-white btn btn-success btn-outline-primary"
+                id="basic-addon1"
+              >
+                <i class="fas fa-search"></i>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- container -->
+    <div class="container mt-3">
+      <!-- slider -->
+      <div class="row d-none d-md-block">
+        <div class="col-md-12 p-0">
+          <div
+            id="carouselExampleCaptions"
+            class="wow carousel slide carousel-fade carousel-dark fadeIn"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slide1.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide3.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second
+                    slide.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide2.jpg" class="d-block w-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon bg-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon bg-dark"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end slider -->
+      <!-- profiles   -->
+      <div class="row row-cols-1 row-cols-md-3 g-1 g-md-3 mt-3">
+        <div class="wow col-md-12 text-center fs-1 slideInRight">Our Heros</div>
+        <div class="col wow slideInLeft">
+          <div class="card">
+            <div class="card-header h2">Mr. SRK</div>
+            <div class="card-body">
+              <img src="images/srk.jpg" alt="" class="card-img" />
+              <ul class="list-group list-group-flush my-3">
+                <li class="list-group-item active list-group-item-action btn">
+                  Dhaka
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Rajshahi
+                </li>
+                <li class="list-group-item disabled list-group-item-action btn">
+                  Khulna
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Barisal
+                </li>
+              </ul>
+              <button
+                class="btn btn-success text-white btn-outline-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1"
+              >
+                Read More
+              </button>
+            </div>
+            <div class="card-footer">
+              <a class="card-link">The king Khan is here...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col wow slideInDown">
+          <div class="card">
+            <div class="card-header h2">Mr. SRK</div>
+            <div class="card-body">
+              <img src="images/sallu.jpg" alt="" class="card-img" />
+              <ul class="list-group list-group-flush my-3">
+                <li class="list-group-item active list-group-item-action btn">
+                  Dhaka
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Rajshahi
+                </li>
+                <li class="list-group-item disabled list-group-item-action btn">
+                  Khulna
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Barisal
+                </li>
+              </ul>
+              <button class="btn btn-success text-white btn-outline-primary">
+                Read More
+              </button>
+            </div>
+            <div class="card-footer">
+              <a class="card-link">Bhaijan is here...</a>
+            </div>
+          </div>
+        </div>
+        <div class="col wow slideInRight">
+          <div class="card">
+            <div class="card-header h2">Mr. SRK</div>
+            <div class="card-body">
+              <img src="images/amir.jpg" alt="" class="card-img" />
+              <ul class="list-group list-group-flush my-3">
+                <li class="list-group-item active list-group-item-action btn">
+                  Dhaka
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Rajshahi
+                </li>
+                <li class="list-group-item disabled list-group-item-action btn">
+                  Khulna
+                </li>
+                <li class="list-group-item list-group-item-action btn">
+                  Barisal
+                </li>
+              </ul>
+              <button class="btn btn-success text-white btn-outline-primary">
+                Read More
+              </button>
+            </div>
+            <div class="card-footer">
+              <a class="card-link">Mr. perfectionist is here...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end profiles   -->
+
+      <div class="row my-3">
+        <div class="col-md-12"><hr /></div>
+      </div>
+
+      <!-- latest post -->
+      <div class="row">
+        <div class="col-m-12 fs-1 text-center">Latest Post</div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="card p-3">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="images/playground.jpg" alt="" class="card-img" />
+              </div>
+              <div class="col-md-8 d-flex justify-content-center flex-column">
+                <div class="card-title h2">Welcome to fantacy kingdom</div>
+                <div class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, sequi. Aut perferendis voluptas amet eos officia
+                  dolores reiciendis nihil quasi tempora saepe iure dignissimos
+                  facere sint excepturi cumque, molestias itaque.
+                </div>
+                <button class="btn btn-link p-0 d-block me-auto">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-3">
+        <div class="col-md-12">
+          <div class="card p-3">
+            <div class="row">
+              <div class="col-md-8 d-flex justify-content-center flex-column">
+                <div class="card-title h2">Welcome to Cox's Bazar</div>
+                <div class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Repudiandae, sequi. Aut perferendis voluptas amet eos officia
+                  dolores reiciendis nihil quasi tempora saepe iure dignissimos
+                  facere sint excepturi cumque, molestias itaque.
+                </div>
+                <button class="btn btn-link p-0 d-block me-auto">
+                  Read More
+                </button>
+              </div>
+              <div class="col-md-4">
+                <img src="images/seabeach.jpg" alt="" class="card-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of post -->
+
+      <div class="row my-3">
+        <div class="col-md-12"><hr /></div>
+      </div>
+
+      <!-- progress -->
+      <div class="row">
+        <div class="col-md-6 shadow border rounded m-auto p-4">
+          <div class="fs-1 text-center">Our Skills</div>
+          <label for="">HTML</label>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-primary progress-bar-striped progress-bar-animated"
+              style="width: 90%"
+            >
+              90%
+            </div>
+          </div>
+          <label for="">CSS</label>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-success progress-bar-striped progress-bar-animated"
+              style="width: 80%"
+            >
+              80%
+            </div>
+          </div>
+          <label for="">Bootstrap</label>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+              style="width: 70%"
+            >
+              70%
+            </div>
+          </div>
+          <label for="">JavaScript</label>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-danger progress-bar-striped progress-bar-animated"
+              style="width: 60%"
+            >
+              60%
+            </div>
+          </div>
+          <label for="">JQuery</label>
+          <div class="progress mb-3">
+            <div
+              class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
+              style="width: 50%"
+            >
+              50%
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row my-3">
+        <div class="col-md-12"><hr /></div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 gx-4">
+        <div class="col">
+          <!-- contact form -->
+          <div class="shadow-lg rounded-3 border p-4">
+            <div class="text-center fs-1 mb-3">Contact Form</div>
+            <form action="#" class="mb-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  class="form-control"
+                />
+                <label>Your Name</label>
+                <div class="valid-feedback">Your name is correct</div>
+                <div class="invalid-feedback">Your name is not correct</div>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  placeholder="Your Email"
+                  class="form-control"
+                />
+                <label>Your Email</label>
+                <div class="valid-feedback">E-mail address is valid</div>
+                <div class="invalid-feedback">E-mail address is not valid</div>
+              </div>
+              <div class="form-floating mb-3">
+                <textarea
+                  placeholder="Your Message"
+                  class="form-control"
+                  style="min-height: 150px"
+                ></textarea>
+                <label>Your Message</label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-light border border-5 border-dark btn-sm px-4 py-2 btn-outline-dark fw-bolder"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+          <!-- end contact form -->
+        </div>
+        <div class="col">
+          <div class="shadow-lg rounded-3 border p-4 h-100">
+            <!-- start table -->
+            <table class="table table-dark table-hover table-striped h-100">
+              <thead>
+                <tr>
+                  <th>S.N.</th>
+                  <th>Name</th>
+                  <th>City</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>01</td>
+                  <td>Mahfuzur Rhman</td>
+                  <td>Dhaka</td>
+                </tr>
+                <tr>
+                  <td>02</td>
+                  <td>Hero Alom</td>
+                  <td>Rongpur</td>
+                </tr>
+                <tr>
+                  <td>03</td>
+                  <td>Anata Jalil</td>
+                  <td>Gazipur</td>
+                </tr>
+                <tr>
+                  <td>04</td>
+                  <td>Takla Murad</td>
+                  <td>Tongi</td>
+                </tr>
+                <tr>
+                  <td>05</td>
+                  <td>Pori Moni</td>
+                  <td>Dhaka</td>
+                </tr>
+                <tr>
+                  <td>06</td>
+                  <td>Mithila</td>
+                  <td>Rongpur</td>
+                </tr>
+                <tr>
+                  <td>07</td>
+                  <td>Prova</td>
+                  <td>Gazipur</td>
+                </tr>
+                <tr>
+                  <td>08</td>
+                  <td>Momataz</td>
+                  <td>Tongi</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- end table -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end container -->
+
+    <footer class="container-fluid bg-dark text-white mt-5">
+      <div class="container">
+        <div class="row row-cols-3 py-5 mb-3">
+          <div class="col">
+            <h2>Contact</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Address: Panthapath, Dhaka-1205
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Mobile: 01955517560
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Email: asif@dti.ac
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                facebook: fb.com/abir.upwork
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Pages</h2>
+            <ul class="list-group">
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Home Page
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                About Us
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Gallery
+              </li>
+              <li
+                class="list-group-item bg-transparent text-white border-0 ps-0"
+              >
+                Contact
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <h2>Social Media</h2>
+            <ul class="list-group">
+              <li class="list-group-item bg-transparent border-0 ps-0">
+                <a href="#" class="text-white text-decoration-none">Facebook</a>
+              </li>
+              <li class="list-group-item bg-transparent border-0 ps-0">
+                <a href="#" class="text-white text-decoration-none">Twitter</a>
+              </li>
+              <li class="list-group-item bg-transparent border-0 ps-0">
+                <a href="#" class="text-white text-decoration-none">Linkedin</a>
+              </li>
+              <li class="list-group-item bg-transparent border-0 ps-0">
+                <a href="#" class="text-white text-decoration-none">Whatsapp</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>&copy; 2022 | Batch 75 | All Rights Reserved</div>
+      </div>
+    </footer>
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Shah-Rukh Khan</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+            cupiditate. Est, architecto voluptatem. Nesciunt soluta doloribus,
+            incidunt consequatur voluptatem ipsa corrupti enim autem, dicta
+            eligendi sapiente expedita, hic fugit a nisi officia! Animi maiores
+            itaque natus at sunt repellat deleniti, hic suscipit rerum porro
+            nam. Itaque praesentium dolores corporis tempore.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- login modal -->
+    <div
+      class="modal fade"
+      id="login"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Log-in Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="mb-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="User Name"
+                />
+                <label for="">User Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <label for="">Password</label>
+              </div>
+              <button class="btn btn-primary btn-sm px-4 py-2 fw-lighter">
+                Log-in
+              </button>
+            </form>
+            <div class="modal-footer">
+              Don't have any account?
+              <a
+                href="#"
+                class="badge bg-primary rounded-pill text-decoration-none text-white"
+                data-bs-target="#signup"
+                data-bs-toggle="modal"
+              >
+                Sign up
+              </a>
+              Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end login modal -->
+    <!-- signup modal -->
+    <div
+      class="modal fade"
+      id="signup"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Sign-up Form</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="#" class="mb-3">
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="User Name"
+                />
+                <label for="">User Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <label for="">Password</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  placeholder="Confirm Password"
+                />
+                <label for="">Confirm Password</label>
+              </div>
+              <div class="mb-3 form-check">
+                <label for="" class="">
+                  <input type="checkbox" class="form-check-input" />
+                  I agree with terms and condition!
+                </label>
+              </div>
+              <button class="btn btn-primary btn-sm px-4 py-2 fw-lighter">
+                Sign-up
+              </button>
+            </form>
+            <div class="modal-footer">
+              Already have account?
+              <a
+                href="#"
+                class="badge bg-primary rounded-pill text-decoration-none text-white"
+                data-bs-target="#login"
+                data-bs-toggle="modal"
+              >
+                Log in
+              </a>
+              Here
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end signup modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.3/js/bootstrap.bundle.min.js"></script>
+    <script src="./WOW-master/dist/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+
+  <!-- Mirrored from storied-muffin-c40aa3.netlify.app/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 14 Dec 2022 09:57:14 GMT -->
+</html>

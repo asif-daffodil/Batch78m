@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2015 by original authors @ fontello.com</metadata>
+<defs>
+<font id="ws-ctrl-utter" horiz-adv-x="1000" >
+<font-face font-family="ws-ctrl-utter" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="play" unicode="&#xe800;" d="m0 11v677q0 39 22 52t53-8l564-349q20-14 20-33 0-9-5-18t-10-12l-5-4-564-349q-31-20-53-7t-22 51z" horiz-adv-x="658.7" />
+<glyph glyph-name="pause" unicode="&#xe801;" d="m0 5q0-27 19-46t45-19h127q27 0 45 19t19 46v691q0 27-19 45t-45 19h-127q-27 0-45-19t-19-45v-691z m480 0q0-27 19-46t45-19h127q26 0 45 19t19 46v691q0 27-19 45t-45 19h-127q-27 0-45-19t-19-45v-691z" horiz-adv-x="735.4" />
+<glyph glyph-name="left-open-big" unicode="&#xe802;" d="m452-20q26-26 0-48-26-26-48 0l-392 394q-24 24 0 50l392 394q22 26 48 0 26-22 0-48l-358-372z" horiz-adv-x="465" />
+<glyph glyph-name="right-open-big" unicode="&#xe803;" d="m13-20l358 370-358 372q-26 26 0 48 26 26 48 0l392-394q24-26 0-50l-392-394q-22-26-48 0-26 22 0 48z" horiz-adv-x="465" />
+</font>
+</defs>
+</svg>

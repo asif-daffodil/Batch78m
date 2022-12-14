@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 1200px;
+  height: 500px;
+  position: relative;
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+    > div {
+      position: absolute;
+      width: max-content;
+      padding: 20px;
+      bottom: 60px;
+      border-radius: 8px;
+      left: 50%;
+      transform: translate(-50%);
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+#dot {
+  list-style: none;
+  position: absolute;
+  z-index: 50;
+  display: flex;
+  top: 480px;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+  > li {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin: 5px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.d-none {
+  opacity: 0;
+}
+
+.activeDot {
+  border: 2px solid red;
+}
+
+.pain {
+  width: max-content;
+  height: max-content;
+  margin: 20px auto;
+  position: relative;
+  overflow: hidden;
+  > #left,
+  > #right {
+    width: 80px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    color: #fff;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  > #right {
+    right: -80px;
+  }
+  > #left {
+    left: -80px;
+  }
+  &:hover {
+    > #left {
+      left: 0;
+    }
+    > #right {
+      right: 0;
+    }
+  }
+}
