@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" placeholder="Number 1" id="num1" />
+    <input type="text" placeholder="Number 2" id="num2" />
+    <div>
+      <button id="sum">+</button>
+      <button id="sub">-</button>
+      <button id="mul">*</button>
+      <button id="div">/</button>
+    </div>
+    <div id="show"></div>
+    <script>
+      const sum = document.getElementById("sum");
+      const sub = document.getElementById("sub");
+      const mul = document.getElementById("mul");
+      const div = document.getElementById("div");
+      const show = document.getElementById("show");
+
+      sum.addEventListener("click", () => math("sum"));
+      sub.addEventListener("click", () => math("sub"));
+      mul.addEventListener("click", () => math("mul"));
+      div.addEventListener("click", () => math("div"));
+
+      const math = (work) => {
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+        num1 = parseInt(num1);
+        num2 = parseInt(num2);
+        if (work === "sum") {
+          show.innerHTML = num1 + num2;
+        } else if (work === "sub") {
+          show.innerHTML = num1 - num2;
+        } else if (work === "mul") {
+          show.innerHTML = num1 * num2;
+        } else if (work === "div") {
+          show.innerHTML = num1 / num2;
+        }
+      };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="w-full h-screen flex justify-center items-center flex-col">
+      <div
+        class="w-96 p-4 bg-red-900 text-white text-center uppercase text-4xl font-black tracking-widest drop-shadow rounded-md"
+        id="pn"
+      >
+        Picnic
+      </div>
+      <button
+        class="border px-4 py-2 mt-4 border-red-900 rounded-md hover:bg-red-900 hover:text-white"
+        id="kh"
+      >
+        Khela Hobe
+      </button>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"
+      integrity="sha512-tWHlutFnuG0C6nQRlpvrEhE4QpkG1nn2MOUMWmUeRePl4e3Aki0VB6W1v3oLjFtd0hVOtRQ9PHpSfN6u6/QXkQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $("document").ready(() => {
+        $("#kh").on("click", () => {
+          $("#pn").animate(
+            {
+              height: "toggle",
+              width: "toggle",
+              padding: "toggle",
+              opacity: "toggle",
+            },
+            500
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
