@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;display=swap");
+.anc {
+  background: -webkit-gradient(linear, left bottom, right top, from(black), color-stop(blue), to(black));
+  background: linear-gradient(to top right, black, blue, black);
+}
+
+.navbar-brand {
+  font-family: 'Permanent Marker', cursive;
+}
+
+.carousel-caption {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 25px !important;
+  height: 25px !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #000;
+  border-radius: 50%;
+  margin-top: -32px;
+}
+/*# sourceMappingURL=style.css.map */
