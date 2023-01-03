@@ -1,0 +1,9 @@
+/node_modules/
+/test/
+/libs/
+
+.babelrc
+.jshintrc
+.editorconfig
+.gitignore
+rollup.config.js

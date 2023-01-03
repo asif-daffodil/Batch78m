@@ -1,0 +1,62 @@
+{
+  "name": "jquery.counto",
+  "version": "1.1.0",
+  "description": "A jQuery plugin to change numeric values with a counting animation",
+  "module": "src/counto.js",
+  "main": "dist/counto.js",
+  "main_umd": "dist/counto.umd.js",
+  "unpkg": "dist/counto.min.js",
+  "unpkg_umd": "dist/counto.umd.min.js",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "xnum": "rollup src/xNumber.js -o dist/xNumber.js -f iife -n xNumber",
+    "verup": "verup",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duzun/jquery.counto.git"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.MD"
+  ],
+  "reveal": true,
+  "keywords": [
+    "jquery",
+    "plugin",
+    "number",
+    "count",
+    "text",
+    "value",
+    "countup"
+  ],
+  "author": {
+    "name": "Dumitru Uzun",
+    "email": "contact@duzun.me",
+    "url": "http://DUzun.Me/"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/duzun/jquery.counto/issues"
+  },
+  "homepage": "https://github.com/duzun/jquery.counto#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "rollup": "^1.27.8",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-terser": "^5.1.2",
+    "verup": "^1.7"
+  },
+  "extra": {
+    "verup": {
+      "files": [
+        "src/counto.js"
+      ]
+    }
+  }
+}

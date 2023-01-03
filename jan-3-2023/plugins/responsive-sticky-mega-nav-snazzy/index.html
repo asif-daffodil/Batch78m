@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SnazzyMenu - Responsive, Mega Menu Navigation</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <!-- Styles for this sample page only -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+<link href="https://fonts.googleapis.com/css2?family=Anaheim&display=swap" rel="stylesheet"> 
+    <style>
+        html{box-sizing:border-box;margin:0;font-size:18px}
+        *,::before,::after{box-sizing:inherit}
+        body{font-family:'Anaheim',sans-serif;margin:0;padding:0;color:#222;position:relative;width:100%;overflow-x:hidden}
+        h1{font-size:2.75rem;margin:0 0 .5rem;color:#222}
+        p{line-height: 1.75;margin:0}
+        header{margin-bottom:3rem;padding:3rem 15px 0}
+        header p{font-size:1.125rem}
+        .btn{display:inline-block;font-size:1.125rem;color:#222;border-radius:4px;border:solid 1px #222;padding:1rem 2rem;margin-top:2rem;transition:all .3s ease}
+        .btn:hover{background:#222;color:#fff}
+        ul{list-style:none;padding:0;margin:0}
+        a{text-decoration:none;outline:none}
+        .img-resp{height:auto;max-width:100%}
+        .tac{text-align:center}
+        .content{max-width:1200px;margin:8rem auto 0;padding:0 15px}
+        section:nth-of-type(2) p{font-size:1.125rem}
+        section{margin-bottom:2rem}
+        section.tac{margin-bottom:4rem}
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <div class="tac">
+            <h1>SnazzyMenu</h1>
+            <h2>Responsive, lightweight, mega menu.</h2>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <nav>
+        <!-- Start SnazzyMenu -->
+        <div class="snazzymenu">
+            <ul id="menu-main-nav" class="menu">
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 1</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="menu-item-147" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column 2</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 3</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 4</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 5</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column 6</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 7</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column 8</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="#">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Column Title</a></li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Nav Item</a>
+                    <ul class="sub-menu">
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                        <li id="" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="">Column Title</a>
+                            <ul class="sub-menu">
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Menu Item</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Link To Page</a></li>
+                <li id="" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="">Link To Page</a></li>
+            </ul>
+        </div>
+        <!-- End SnazzyMenu -->
+    </nav>
+
+
+    <div class="content">
+        <section class="tac">
+            <a class="btn" href="//github.com/teloe/snazzymenu/archive/main.zip">Download <i class="fas fa-download"></i></a>
+            <a class="btn" href="//github.com/teloe/snazzymenu">GitHub <i class="fab fa-github"></i></a>
+        </section>
+        <section class="tac">
+            <p>Resize browser width to see how SnazzyMenu behaves on mobile/desktop.</p>
+            <p>Scroll down to see the sticky menu in action. (Disable by setting 'sticky': false).</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+        <section>
+            <h1 class="tac">Section</h1>
+            <p>Aliqua sit minim officia proident anim qui sit. In exercitation ut aliquip amet cillum proident ullamco et ad incididunt. Sunt pariatur proident dolore est sunt aliqua mollit irure voluptate do. Anim veniam reprehenderit veniam officia nulla eu labore qui minim fugiat tempor irure. Amet consequat ex nisi eiusmod aliquip cillum do laboris eiusmod laboris occaecat excepteur et. Pariatur tempor occaecat sunt ipsum ullamco sunt dolor aliqua elit laboris quis. Eiusmod nulla consectetur cillum commodo esse exercitation ea culpa proident magna ipsum deserunt dolore.</p>
+        </section>
+
+        <section>
+            <p id="copyright">&copy; <span id="year"></span> Tom Eloe. All Rights Reserved.</p>
+        </section>
+        
+    </div>
+
+
+    <script type="text/javascript" src="dist/js/snazzymenu.min.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+            // SnazzyMenu initialize
+			jQuery('.snazzymenu').snazzyMenu({
+                sticky: true,
+                theme: 'dark',
+                phoneBtn: '888-888-8888',
+                locationBtn: 'https://goo.gl/maps/r67upT9SLPFjGNbbA',
+                colClasses: true,
+            });
+            
+            // Add custom images
+            jQuery('.column-1').prepend('<img src="app/images/tech1.jpg">');
+            jQuery('.column-2').prepend('<img src="app/images/tech2.jpg">');
+            jQuery('.column-3').prepend('<img src="app/images/tech3.jpg">');
+            jQuery('.column-4').prepend('<img src="app/images/tech4.jpg">');
+            jQuery('.column-5').prepend('<img src="app/images/nature1.jpg">');
+            jQuery('.column-6').prepend('<img src="app/images/nature2.jpg">');
+            jQuery('.column-7').prepend('<img src="app/images/nature3.jpg">');
+            jQuery('.column-8').prepend('<img src="app/images/nature4.jpg">');
+            jQuery('.column-9').prepend('<img src="app/images/nature5.jpg">');
+            jQuery('.column-10').prepend('<img src="app/images/nature6.jpg">');
+            jQuery('.column-11').prepend('<img src="app/images/nature7.jpg">');
+            jQuery('.column-12').prepend('<img src="app/images/nature8.jpg">');
+            jQuery('.column-13').append('<img src="app/images/nature7.jpg">');
+            jQuery('.column-14').append('<img src="app/images/tech1.jpg">');
+            jQuery('.column-15').append('<img src="app/images/nature4.jpg">');
+            // Add image responsive class
+            jQuery('.column-title img').addClass('img-resp');
+		});
+	</script>
+
+    <script>
+        jQuery('#year').text(new Date().getFullYear());
+    </script>
+
+</body>
+</html>

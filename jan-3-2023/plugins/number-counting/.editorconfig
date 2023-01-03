@@ -1,0 +1,44 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+
+[*]
+
+# change these settings to your own preference
+indent_style = space
+indent_size = 4
+
+# we recommend you to keep these unchanged
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{md,markdown}]
+ trim_trailing_whitespace = false
+
+[{Makefile,makefile,*.mk}]
+indent_style = tab
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[*.{html,tpl}]
+indent_style = space
+indent_size = 2
+
+[*.sublime-project]
+indent_style = tab
+indent_size = 4
+
+[*.conf]
+indent_style = tab
+indent_size = 4
+
+[*.yml]
+indent_style = space
+indent_size = 4

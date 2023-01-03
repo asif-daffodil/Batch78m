@@ -1,0 +1,27 @@
+{
+    "name": "mega-menu-plugin",
+    "version": "1.0.0",
+    "description": "",
+    "main": "gulpfile.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "last 2 versions"
+    ],
+    "devDependencies": {
+        "autoprefixer": "^10.4.2",
+        "browser-sync": "^2.27.7",
+        "cssnano": "^5.0.17",
+        "eslint": "^8.9.0",
+        "gulp": "^4.0.2",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-postcss": "^9.0.1",
+        "gulp-sass": "^5.1.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "postcss": "^8.4.6",
+        "sass": "^1.49.8"
+    }
+}

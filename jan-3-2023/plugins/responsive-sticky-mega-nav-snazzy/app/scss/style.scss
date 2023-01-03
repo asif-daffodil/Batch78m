@@ -1,0 +1,538 @@
+// Menu Toggle Variables
+$buttonWidth: 30px;
+$buttonHeight: 24px;
+$buttonColorDark: #fff;
+$buttonColorLight: #000;
+$lineThickness: 2px;
+$transitionSpeed: .15s;
+$transitionEasing: ease-in-out;
+
+@keyframes fadeIn {
+    0%{opacity:0;visibility:hidden}
+    100%{opacity:1;visibility:visible}
+}
+
+@keyframes slideLeft {
+    0%{opacity:0;visibility:hidden;transform:translateX(10%)}
+    100%{opacity:1;visibility:visible;transform:translateX(0)}
+}
+
+#copyright {
+    margin: 4rem 0;
+    text-align: center;
+}
+
+// Close overlay
+.close-overlay {
+    position:fixed;
+    background: rgba(0,0,0,.1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 4;
+    transition: all .3s ease;
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+// SnazzyMenu
+.snazzymenu {
+    border-top: solid 1px rgba(0,0,0,.1);
+    border-bottom: solid 1px rgba(0,0,0,.1);
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+
+    // Dark theme
+    &.dark {
+        background: rgba(0,0,0,.95);
+        ul {
+            li {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+        .menu-toggle {
+            color: $buttonColorDark;
+        }
+        &.mobile {
+            .menu {
+                &.caret {
+                    li {
+                        &.has-sub {
+                            .toggle {
+                                &::after {
+                                    border-right: solid 1px #fff;
+                                    border-bottom: solid 1px #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.plus {
+                    li {
+                        &.has-sub {
+                            .toggle {
+                                &::after {
+                                    background: linear-gradient(#fff,#fff), linear-gradient(#fff,#fff);
+                                    background-position:center;
+                                    background-size: 50% 2px,2px 50%;
+                                    background-repeat:no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.desktop {
+            .menu {
+                background: rgba(0,0,0,.95);
+                &.open {
+                    > li {
+                        &.active {
+                            > a {
+                                color:rgba(#fff,.6);
+                                &::after {
+                                    border-color: rgba(#fff,.6);
+                                }
+                            }
+                        }
+                    }
+                }
+                > li {
+                    &.has-sub {
+                        > a {
+                            &::after {
+                                border-right: solid 1px #fff;
+                                border-bottom: solid 1px #fff;
+                            }
+                        }
+                    }
+                }
+                .mega-menu {
+                    background-color: rgba(0,0,0,.95);
+                }
+            }
+        }
+        .controls {
+            a {
+                color: #fff;
+            }
+        }
+    }
+
+    // Light theme
+    &.light {
+        background: rgba(255,255,255,.97);
+        ul {
+            li {
+                a {
+                    color: #000;
+                }
+            }
+        }
+        .menu-toggle {
+            color: $buttonColorLight;
+        }
+        &.mobile {
+            .menu {
+                &.caret {
+                    li {
+                        &.has-sub {
+                            .toggle {
+                                &::after {
+                                    border-right: solid 1px #000;
+                                    border-bottom: solid 1px #000;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.plus {
+                    li {
+                        &.has-sub {
+                            .toggle {
+                                &::after {
+                                    background: linear-gradient(#000,#000), linear-gradient(#000,#000);
+                                    background-position:center;
+                                    background-size: 50% 2px,2px 50%;
+                                    background-repeat:no-repeat;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.desktop {
+            .menu {
+                background: rgba(255,255,255,.97);
+                &.open {
+                    > li {
+                        &.active {
+                            > a {
+                                color:rgba(#000,.6);
+                                &::after {
+                                    border-color: rgba(#000,.6);
+                                }
+                            }
+                        }
+                    }
+                }
+                > li {
+                    &.has-sub {
+                        > a {
+                            &::after {
+                                border-right: solid 1px #000;
+                                border-bottom: solid 1px #000;
+                            }
+                        }
+                    }
+                }
+                .mega-menu {
+                    background: rgba(255,255,255,.97);
+                }
+            }
+        }
+        .controls {
+            a {
+                color: #000;
+            }
+        }
+    }
+
+    // General
+    ul {
+        li {
+            a {
+                display:inline-block;
+                padding: 5px;
+            }
+        }
+    }
+    .menu {
+        display:none;
+        position: absolute;
+        width: 100%;
+        &.open {
+            display:flex;
+            flex-direction: column;
+            animation: slideLeft .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+            animation-delay: .25s;
+            animation-fill-mode: both;
+        }
+        > li {
+            > a {
+                padding: 1.5rem 1rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .column-title {
+        > a {
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: .5rem;
+        }
+    }
+
+    .menu-toggle {
+        cursor:pointer;
+        position: relative;
+        display: block;
+        margin-left: 10px;
+        outline:none;
+        width: $buttonWidth;
+        height: $buttonHeight;
+        border:none;
+        background: transparent;
+        border-top: $lineThickness solid;
+        border-bottom: $lineThickness solid;
+        font-size: 0;
+        transition: all $transitionSpeed $transitionEasing;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: $lineThickness;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0;
+            background: currentColor;
+            transition: transform $transitionSpeed $transitionEasing;
+        } 
+        // &:hover {
+            // color: lighten($buttonColor, 10%);
+        // }
+        &.active {
+            border-color: transparent;
+            &:before {
+                transform: rotate(45deg);
+            }
+            &:after {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    // Mobile
+    &.mobile {
+        &.scroll {
+            &.fixed {
+                overflow-y: scroll;
+            }
+            height: 100vh;
+        }
+        .mega-menu {
+            padding:0;
+            img {
+                display:none !important;
+            }
+        }
+        .sub-menu {
+            li {
+                a {
+                    padding-left: 1.5rem;
+                }
+            }
+            .sub-menu {
+                li {
+                    a {
+                        padding-left: 3rem;
+                    }
+                }
+            }
+        }
+        .menu {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            &.caret {
+                li {
+                    &.has-sub {
+                        .toggle {
+                            &::after {
+                                content: '';
+                                display:inline-block;
+                                width: 10px;
+                                height: 10px;
+                                right: 5px;
+                                position: relative;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
+            }
+            &.plus {
+                li {
+                    &.has-sub {
+                        .toggle {
+                            height: 50px;
+                            &::after {
+                                content: '';
+                                display:inline-block;
+                                width: 28px;
+                                height: 28px;
+                                position: absolute;
+                                top:0;
+                                bottom:0;
+                                margin: auto;
+                                right: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        ul {
+            li {
+                &.has-sub {
+                    position: relative;
+                    .toggle {
+                        position: absolute;
+                        width: 40px;
+                        top: 0;
+                        right: 0;
+                        margin-bottom: 0;
+                        // in case you want to be able to click entire li.has-sub > a row to initiate dropdown
+                        width: 100%;
+                        text-align: right;
+                    }
+                }
+                &.open {
+                    > a {
+                        text-decoration: underline;
+                        font-weight: 700;
+                    }
+                    > .toggle {
+                        &::after {
+                            transform: rotate(-135deg)!important;
+                        }
+                    }
+                    li {
+                        &.open {
+                            > a {
+                                text-decoration: none;
+                                // text-transform:none;
+                            }
+                        }
+                    }
+                }
+                &.column-title {
+                    > a {
+                        font-weight: normal;
+                    }
+                }
+                a {
+                    padding: 15px;
+                    text-align: left;
+                }
+            }
+        }
+        .cta {
+            span {
+                display:none;
+            }
+        }
+    }
+
+    // Desktop
+    &.desktop {
+        &.menu-btn-hide {
+            .controls {
+                display: none;
+            }
+            .menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: auto;
+            }   
+        }
+        .menu {
+            &.open {
+                flex-direction: row;
+                justify-content: space-evenly;
+                height: auto;
+                animation: fadeIn .3s ease;
+                animation-delay: .1s;
+                animation-fill-mode: both;
+                > li {
+                    &.active {
+                        .mega-menu {
+                            display: flex!important;
+                            flex-direction: row!important;
+                            .sub-menu {
+                                display: block!important;
+                            }
+                            .column-title {
+                                animation: fadeIn .4s ease;
+                                animation-delay: .1s;
+                                animation-fill-mode: both;
+                            }
+                        }
+                    }
+                }
+            }
+            > li {
+                &.has-sub {
+                    > a {
+                        &::after {
+                            content: '';
+                            display:inline-block;
+                            width: 8px;
+                            height: 8px;
+                            position: relative;
+                            top: -4px;
+                            right: -.5rem;
+                            transform: rotate(45deg);
+                        }
+                    }
+                    .toggle {
+                        display: none;
+                    }
+                }
+            }
+        }
+        .mega-menu {
+            position: absolute;
+            left:0;
+            width: 100%;
+            padding: 2rem 1rem;
+            justify-content: center;
+            > li {
+                flex: 1;
+                padding: 0 5px;
+                > a {
+                    width: 100%;
+                }
+            }
+            .column-title {
+                img {
+                    display: block;
+                    margin: 1rem auto;
+                    width: 100%;
+                }
+            }
+            .sub-menu {
+                li {
+                    a {
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.fixed {
+        position: fixed;
+        top: 0;
+    }
+
+    // Top Controls
+    .controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px;
+        .logo {
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .cta {
+            display: flex;
+            align-items: center;
+        }
+        a {
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 10px;
+        }
+        svg {
+            fill: currentColor;
+            // width: 1.5rem;
+            // height: 1.5rem;
+        }
+    }
+
+}
+
